@@ -3032,9 +3032,9 @@ function BeeSwarmSimulator(DATA){
             svg:document.getElementById('mountainTopFieldBoost'),
             cooldown:document.getElementById('mountainTopFieldBoost_cooldown'),
             amount:document.getElementById('mountainTopFieldBoost_amount'),
-            maxCooldown:15*60,
+            maxCooldown:15,
             maxAmount:4,
-            tokenLife:4,
+            tokenLife:40,
             
             update:(amount,player)=>{
                 
@@ -19482,7 +19482,7 @@ function BeeSwarmSimulator(DATA){
             
             collectPattern:[[-3,0],[-3,-1],[-3,-2],[-3,-3],[3,0],[3,-1],[3,-2],[3,-3],[-1,0],[-1,-1],[-1,-2],[-1,-3],[1,0],[1,-1],[1,-2],[1,-3]],
             collectAmount:7,
-            cooldown:0.75,
+            cooldown:0.25,
             mesh:function(box,cylinder,sphere,star){
                 
                 box(-0.3,0,0.6,0.1,0.1,0.8,false,[1.3,1.3,0.4])
