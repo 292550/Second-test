@@ -7146,8 +7146,7 @@ function BeeSwarmSimulator(DATA){
                     return
                 }
 
-                items.microConverter.amount--
-
+                
                 textRenderer.add((player.pollen*player.honeyPerPollen)|0,[player.body.position.x,player.body.position.y+2,player.body.position.z],COLORS.honey,1,'⇆')
                 player.honey+=(player.pollen*player.honeyPerPollen)|0
                 player.pollen=0
@@ -7654,7 +7653,7 @@ function BeeSwarmSimulator(DATA){
 
         gumdrops:{
             
-            amount:0,u:128/2048,v:128*7/2048,cooldown:4,autoUse:true,value:5,
+            amount:0,u:128/2048,v:128*7/2048,cooldown:0.5,autoUse:true,value:5,
             use:function(){
 
                 if(player.fieldIn){
