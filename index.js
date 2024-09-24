@@ -19482,7 +19482,7 @@ function BeeSwarmSimulator(DATA){
             
             collectPattern:[[-3,0],[-3,-1],[-3,-2],[-3,-3],[3,0],[3,-1],[3,-2],[3,-3],[-1,0],[-1,-1],[-1,-2],[-1,-3],[1,0],[1,-1],[1,-2],[1,-3]],
             collectAmount:7,
-            cooldown:0.25,
+            cooldown:0.05,
             mesh:function(box,cylinder,sphere,star){
                 
                 box(-0.3,0,0.6,0.1,0.1,0.8,false,[1.3,1.3,0.4])
