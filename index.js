@@ -3607,7 +3607,7 @@ function BeeSwarmSimulator(DATA){
             cooldown:document.getElementById('haste_cooldown'),
             amount:document.getElementById('haste_amount'),
             maxCooldown:25,
-            maxAmount:10,
+            maxAmount:100,
             tokenLife:4,
             
             update:(amount,player)=>{
