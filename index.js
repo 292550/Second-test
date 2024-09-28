@@ -4138,7 +4138,7 @@ function BeeSwarmSimulator(DATA){
             
             update:(amount,player)=>{
                 
-                let a=amount*0.15+1
+                let a= (amount*0.15+1) *2
                 player.whitePollen*=a
                 player.redPollen*=a
                 player.bluePollen*=a
@@ -4146,7 +4146,7 @@ function BeeSwarmSimulator(DATA){
             
             getMessage:(amount)=>{
                 
-                return 'Pollen Mark\nx'+(amount*0.15+1)+' pollen'
+                return 'Pollen Mark\nx'+((amount*0.15+1)*2)+' pollen'
             }
         },
         
