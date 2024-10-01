@@ -4012,7 +4012,7 @@ function BeeSwarmSimulator(DATA){
         
         rage:{
             
-            desc:"Grants +1 bee attack for 30s. Stacks up to 3x, for a maximum of +3 bee attack.",
+            desc:"Grants +5 bee attack for 30s. Stacks up to 30x, for a maximum of +3 bee attack.",
             trialCooldown:25,trialRate:0.8,
             statsToAddTo:['rageTokens','battleTokens','redAbilityTokens'],
             u:128*6/2048,v:256*2/2048,
@@ -4020,14 +4020,14 @@ function BeeSwarmSimulator(DATA){
             cooldown:document.getElementById('rage_cooldown'),
             amount:document.getElementById('rage_amount'),
             maxCooldown:30,
-            maxAmount:3,
-            tokenLife:24,
+            maxAmount:30,
+            tokenLife:60,
             
             update:(amount,player)=>{
                 
-                player.whiteBeeAttack+=amount
-                player.blueBeeAttack+=amount
-                player.redBeeAttack+=amount
+                player.whiteBeeAttack+=amount*5
+                player.blueBeeAttack+=amount*5
+                player.redBeeAttack+=amount*5
             },
             
             getMessage:(amount)=>{
