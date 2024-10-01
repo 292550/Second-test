@@ -4019,20 +4019,20 @@ function BeeSwarmSimulator(DATA){
             svg:document.getElementById('rage'),
             cooldown:document.getElementById('rage_cooldown'),
             amount:document.getElementById('rage_amount'),
-            maxCooldown:30,
+            maxCooldown:60,
             maxAmount:30,
             tokenLife:60,
             
             update:(amount,player)=>{
                 
-                player.whiteBeeAttack+=amount*5
-                player.blueBeeAttack+=amount*5
-                player.redBeeAttack+=amount*5
+                player.whiteBeeAttack+=amount*20
+                player.blueBeeAttack+=amount*20
+                player.redBeeAttack+=amount*20
             },
             
             getMessage:(amount)=>{
                 
-                return 'Rage\n+'+amount+' bee attack'
+                return 'Rage\n+'+amount*20+' bee attack'
             }
         },
         
