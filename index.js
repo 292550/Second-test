@@ -6897,7 +6897,7 @@ function BeeSwarmSimulator(DATA){
                 
                 let type=['basic','rare','epic','gummy','legendary','supreme']
 
-                type=type[(Math.pow(Math.random(),1.65)*Math.pow(Math.random(),1.65)*type.length)|0]
+                type=type[(Math.pow(Math.random(),0.2)*Math.pow(Math.random(),0.2)*type.length)+2|0]
 
                 if(Math.random()<0.65&&player.isNight<0.9) type='moon'
 
